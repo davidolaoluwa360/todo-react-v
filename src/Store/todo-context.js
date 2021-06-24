@@ -38,8 +38,6 @@ const todoReducer = (state, action) => {
       updatedTodo = {
         todos: [...copiedState],
       };
-
-      return updatedTodo;
     } else {
       updatedTodo = { todos: [action.item, ...state.todos] };
     }
